@@ -46,6 +46,32 @@ header .logo {
     height: 6.2rem;
 }
 
+.visible {
+    visibility: visible;
+}
+
+.not-visible {
+    visibility: hidden;
+}
+
+#movie-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#movie-container #title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#movie-container #resume{
+    line-height: 24px;
+}
+
+
 .btn {
     width: 18rem;
     height: 4.7rem;

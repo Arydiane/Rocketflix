@@ -17,7 +17,6 @@ html {
 
 body {
     width: 80%;
-    height: 100vh;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
@@ -28,10 +27,12 @@ body {
     background: var(--background);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
+
 header {
-    padding: 12rem 3rem 3rem 3rem;
+    padding: 6rem 3rem 3rem 3rem;
 }
 
 header h1 {
@@ -46,31 +47,60 @@ header .logo {
     height: 6.2rem;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .visible {
     visibility: visible;
 }
 
 .not-visible {
     visibility: hidden;
-}
+} 
 
 #movie-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 2rem;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#movie-container #title {
+.movie-items .poster {
+    flex: 0 0 40%;
+}
+
+.movie-items.description {
+    flex: 0 0 60%;
+    text-align: left;
+}
+
+#poster {
+    width: 20rem;
+    height: auto;
+}
+
+#titleMovie {
+    color: var(--title);
     font-weight: 700;
     font-size: 2rem;
     line-height: 3rem;
 }
 
-#movie-container #resume{
+#resumeMovie {
     line-height: 24px;
+    padding-top: 1rem;
 }
 
+section {
+    padding: 1rem 0;
+}
 
 .btn {
     width: 18rem;
@@ -80,8 +110,13 @@ header .logo {
     line-height: 1.8rem;
     color: #000000;
     background-color: var(--bg-button);
-    border: 2px solid #1A1A1A;
+    border: 0.2rem solid #1A1A1A;
     border-radius: 0.5rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 1rem #000;
 }
 
 .logo-btn {

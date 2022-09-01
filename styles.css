@@ -125,7 +125,6 @@ section {
     padding-right: 0.5rem;
 }
 
-
 footer {
     padding: 3rem;
     font-size: 1.4rem;
@@ -134,4 +133,24 @@ footer {
 footer p {
     width: 40rem;
     margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        width: 95%;
+    }
+
+    #movie-container {
+        width: 100%;
+    }
+
+    .movie-items.description {
+        flex: 0 0 90%;
+        text-align: center;
+    }
+
+    footer p {
+        width: 95%;
+    }
 }
